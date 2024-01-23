@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*Light Blue*/
+  --lightblue100: #F3F5FC;
+  --lightblue200: #EFF1FA;
+  --lightblue300: #E9ECF8;
+  --lightblue400: #AAB2D5;
+  --lightblue500: #757FB2;
+  /*Dark Blue*/
+  --darkblue100: #609ED4;
+  --darkblue200: #356EA9;
+  --darkblue300: #0A3871;
+  --darkblue400: #072B61;
+  --darkblue500: #052051;
+  /*Gray*/
+  --darkblue100: #CED4DA;
+  --darkblue200: #ADB5BD;
+  --darkblue300: #868E96;
+  --darkblue400: #495057;
+  --darkblue500: #343A40;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  background-color: var(--lightblue100);
+}
