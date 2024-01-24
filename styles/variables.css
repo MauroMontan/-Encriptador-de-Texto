@@ -1,0 +1,23 @@
+:root {
+  /*Light Blue*/
+  --lightblue100: #F3F5FC;
+  --lightblue200: #EFF1FA;
+  --lightblue300: #E9ECF8;
+  --lightblue400: #AAB2D5;
+  --lightblue500: #757FB2;
+  /*Dark Blue*/
+  --darkblue100: #609ED4;
+  --darkblue200: #356EA9;
+  --darkblue300: #0A3871;
+  --darkblue400: #072B61;
+  --darkblue500: #052051;
+  /*Gray*/
+  --gray100: #CED4DA;
+  --gray200: #ADB5BD;
+  --gray300: #868E96;
+  --gray400: #495057;
+  --gray500: #343A40;
+
+  /*Shadows*/
+  --box-shaddow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
