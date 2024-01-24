@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title></title>
+  <title>Encriptador de Texto</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./styles.css">
@@ -11,6 +11,29 @@
 
 <body>
   <div id="app">
+    <section class="column inputcontainer">
+      <header>
+        <img src="./assets/AluraLogo.svg" alt="alura logo">
+      </header>
+      <main>
+        <textarea placeholder="Ingrese el texto aqui" name="encryptorinput" id="text-input"></textarea>
+        <section class="controls">
+          <button class="button primary">Encriptar</button>
+          <button class="button secondary">Desencriptar</button>
+        </section>
+      </main>
+    </section>
+    <section class="column outputcontainer">
+      <img src="./assets/placeholder.svg" alt="placeholder">
+      <div class="message-box">
+        <p class="message">
+          Ningún mensaje fue encontrado
+        </p>
+        <p class="instructions">
+          Ingresa el texto que desees encriptar o desencriptar.
+        </p>
+      </div>
+    </section>
 
   </div>
 </body>
