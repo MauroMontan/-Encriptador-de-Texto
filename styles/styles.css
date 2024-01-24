@@ -159,6 +159,53 @@ body {
   }
 }
 
+@media (max-width: 1200px) {
+  #app {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & .column.inputcontainer {
+      width: 100%;
+
+      & header {
+        padding-top: 1rem;
+        justify-content: center;
+      }
+
+      & main {
+        padding-top: 3rem;
+        padding-bottom: 0rem;
+        height: 100%;
+        margin: 0;
+        align-items: start;
+        justify-content: center;
+        width: 100%;
+
+        & .info-tag {
+          margin: 1rem;
+        }
+
+        & .controls {
+          width: 100%;
+        }
+
+      }
+    }
+
+    & .column.outputcontainer {
+      width: 100%;
+      max-height: 35vh !important;
+
+      & .placeholder {
+        & img {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
 
 .hidden {
   display: none !important;
