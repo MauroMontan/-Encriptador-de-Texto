@@ -18,20 +18,31 @@
       <main>
         <textarea placeholder="Ingrese el texto aqui" name="encryptorinput" id="text-input"></textarea>
         <section class="controls">
-          <button class="button primary">Encriptar</button>
-          <button class="button secondary">Desencriptar</button>
+          <button id="encrypt" class="button primary">Encriptar</button>
+          <button id="decrypt" class="button secondary">Desencriptar</button>
         </section>
       </main>
     </section>
     <section class="column outputcontainer">
-      <img src="./assets/placeholder.svg" alt="placeholder">
-      <div class="message-box">
-        <p class="message">
-          Ningún mensaje fue encontrado
-        </p>
-        <p class="instructions">
-          Ingresa el texto que desees encriptar o desencriptar.
-        </p>
+      <div class="placeholder">
+        <img src="./assets/placeholder.svg" alt="placeholder">
+        <div class="message-box">
+          <p class="message">
+            Ningún mensaje fue encontrado
+          </p>
+          <p class="instructions">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+      </div>
+
+      <div class="content-box hidden">
+        <p id="output-container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate error vero
+          harum hic
+          cupiditate atque
+          placeat ducimus. Excepturi ut ex quas nihil nam! Veniam nobis a, totam nisi architecto incidunt?</p>
+
+        <button class="button secondary copy-btn">copiar</button>
       </div>
     </section>
 

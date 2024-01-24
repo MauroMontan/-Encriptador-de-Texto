@@ -7,11 +7,6 @@ const algorithKeys = {
   "u": "ufat"
 }
 
-const word = "fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!"
-
-
-
-
 function encrypt(word) {
   let letterArr = [...word]
   Object.entries(algorithKeys).forEach(([letterKey, value]) => {
@@ -19,7 +14,6 @@ function encrypt(word) {
   })
   return letterArr.join("");
 }
-
 
 function decrypt(word = "") {
   let letters = [...word]
@@ -29,7 +23,6 @@ function decrypt(word = "") {
       letters.forEach(letter => {
         if (letter === k) {
           word = word.replaceAll(v, letter)
-
         }
       })
     }
@@ -39,6 +32,36 @@ function decrypt(word = "") {
 
 }
 
-const encripted = encrypt(word)
-console.log(encripted)
-console.log(decrypt(word))
+const textInput = document.querySelector("#text-input")
+const encryptButton = document.querySelector("#encrypt")
+const decryptButton = document.querySelector("#decrypt")
+const outputContainer = document.querySelector("#output-container")
+const placeHolder = document.querySelector(".placeholder")
+const contentBox = document.querySelector(".content-box")
+const copyBtn = document.querySelector(".copy-btn")
+
+const toggleContentVisibility = () => {
+
+  if (!placeHolder.classList.contains("hidden")) {
+    placeHolder.classList.add("hidden")
+    contentBox.classList.remove("hidden")
+  }
+}
+
+
+encryptButton.addEventListener("click", () => {
+  toggleContentVisibility();
+  outputContainer.innerHTML = encrypt(textInput.value);
+
+})
+
+decryptButton.addEventListener("click", () => {
+  toggleContentVisibility();
+  outputContainer.innerHTML = decrypt(textInput.value);
+
+})
+
+copyBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText(outputContainer.textContent)
+  textInput.value = "";
+})
